@@ -2,6 +2,7 @@
 
 // search & inputFiled && json convert javaScript
 const phoneHunter = ()=>{
+    const main = document.getElementById('main').innerHTML="";
     const inputFiled = document.getElementById('input-filed').value;
     // const inputFiledText = parseFloat(inputFiled);
     //     console.log(inputFiled);
@@ -15,12 +16,12 @@ const phoneHunter = ()=>{
 
 const phoneItem = (datas)=>{
     
-    console.log(datas)
+    // console.log(datas)
     const mainDaiv = document.getElementById('main');
     // const frist20Data = data.slice(0, 20);
     // console.log(frist20Data);
     for(const data of datas){
-        console.log(data);
+        // console.log(data);
         const newDiv = document.createElement('div')
         newDiv.className = ('col-md-4');
         newDiv.innerHTML = `
@@ -54,13 +55,13 @@ const allPhoneDetail = (info)=>{
     mainDetail.innerHTML =`
     <div>
     <img src="${info.image}" alt="">
-    <h4> slug: ${info.slug}</h4>
-    <h4> releaseDate: ${info.releaseDate}</h4>
-    <h4> sensors: ${info.mainFeatures.sensors}</h4>
-    <h4> memory: ${info.mainFeatures.memory}</h4>
-    <h4> others: ${info.others.WLAN}</h4>
-    <h4> storage: ${info.mainFeatures.storage}</h4>
-    <h4> displaySize: ${info.mainFeatures.displaySize}
+    <h4 class='tex-center fs-6'> slug: ${info.slug}</h4>
+    <h4 class='tex-center fs-6'> releaseDate: ${info.releaseDate}</h4>
+    <h4 class='tex-center fs-6'> sensors: ${info.mainFeatures.sensors}</h4>
+    <h4 class='tex-center fs-6'> memory: ${info.mainFeatures.memory}</h4>
+    <h4 class='tex-center fs-6'> others: ${info.others.WLAN}</h4>
+    <h4 class='tex-center fs-6'> storage: ${info.mainFeatures.storage}</h4>
+    <h4 class='tex-center fs-6'> displaySize: ${info.mainFeatures.displaySize}
 
 
     </div>`
