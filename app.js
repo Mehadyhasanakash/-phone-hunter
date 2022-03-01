@@ -22,11 +22,7 @@ const phoneItem = (datas)=>{
     for(const data of datas){
         console.log(data);
         const newDiv = document.createElement('div')
-        newDiv.className = ('col-lg-4')
-        newDiv.innerHTML = `
-        <img src="${data.image}" alt="">
-        <h2> ${data.phone_name} </h2>
-        `
+        newDiv.innerHTML =
         mainDaiv.appendChild(newDiv);
     }
 }
