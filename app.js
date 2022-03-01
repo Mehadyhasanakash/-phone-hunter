@@ -3,6 +3,8 @@
 // search & inputFiled && json convert javaScript
 const phoneHunter = ()=>{
     const main = document.getElementById('main').innerHTML="";
+    const mainDetail = document.getElementById('phone-details').innerHTML="";
+
     const inputFiled = document.getElementById('input-filed').value;
     // const inputFiledText = parseFloat(inputFiled);
     //     console.log(inputFiled);
@@ -20,6 +22,9 @@ const phoneItem = (datas)=>{
     const mainDaiv = document.getElementById('main');
     // const frist20Data = data.slice(0, 20);
     // console.log(frist20Data);
+    if(datas.length == 0){
+        alert("apni vul likhtechen phone ar namegulo likhun!");
+    }
     for(const data of datas){
         // console.log(data);
         const newDiv = document.createElement('div')
