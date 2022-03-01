@@ -15,7 +15,7 @@ const phoneHunter = ()=>{
 
 const phoneItem = (datas)=>{
     
-    // console.log(datas)
+    console.log(datas)
     const mainDaiv = document.getElementById('main');
     // const frist20Data = data.slice(0, 20);
     // console.log(frist20Data);
@@ -56,8 +56,11 @@ const allPhoneDetail = (info)=>{
     <img src="${info.image}" alt="">
     <h4> slug: ${info.slug}</h4>
     <h4> releaseDate: ${info.releaseDate}</h4>
-    <h4> sensors: ${info.sensors}</h4>
-    <h4> memory: ${info.memory}</h4>
+    <h4> sensors: ${info.mainFeatures.sensors}</h4>
+    <h4> memory: ${info.mainFeatures.memory}</h4>
+    <h4> others: ${info.others.WLAN}</h4>
+    <h4> storage: ${info.mainFeatures.storage}</h4>
+    <h4> displaySize: ${info.mainFeatures.displaySize}
 
 
     </div>`
