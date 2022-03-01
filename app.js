@@ -22,7 +22,16 @@ const phoneItem = (datas)=>{
     for(const data of datas){
         console.log(data);
         const newDiv = document.createElement('div')
-        newDiv.innerHTML =
+        newDiv.className = ('col-md-4');
+        newDiv.innerHTML = `
+        <div class="border border-1 text-center">
+      <img src="${data.image}" alt="">
+      <h4>${data.brand}</h4>
+      <h4>${data.phone_name}</h4>
+
+    </div>
+        `
+        
         mainDaiv.appendChild(newDiv);
     }
 }

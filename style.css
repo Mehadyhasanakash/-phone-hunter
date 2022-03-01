@@ -1,11 +1,7 @@
-.api{
-    color: rgb(255, 255, 255);
-    font-size: 50px;
+.text{
     font-weight: 600;
-    background-color:rgb(4, 87, 76) ;
-    border-radius: 30px;
-    padding: 15px;
-}
-.color{
-    color: rgb(251, 247, 0);
+    background-color: rgb(2, 88, 77);
+    border-radius: 20px;
+    color: white;
+    
 }
